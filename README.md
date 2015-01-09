@@ -18,5 +18,6 @@ The program will prompt you to select a file, then it will scan the sample count
 
 The first lines show which file was selected, the lines following that begin with % are copied from the OpenBCI data file (OpenBCI uses % as prefix for comments in the data files)
 
-Each line in the data file is a sample, so this shows that at sample #1765, 4 packets were dropped, and that's it out of a total of 97209 samples
+Each line in the data file is a sample. Line 6 contains the very first sample, and the OpenBCI sampleCounter does not always start at 0, so line 6 will likely show some erroneous number of packets dropped. Please ignore line 6 until we fix the bug...
+So this shows that at sample #15893, 1 packet was dropped, and that's it out of a total of 20320 samples.
 
